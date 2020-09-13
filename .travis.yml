@@ -2,19 +2,15 @@ language: node_js
 node_js:
   - v12.13.1
 
+
 env:
   global:
-    - PGPORT=8080
-    - DB_NAME=testdbn
-    - DB_USER=postgres
-    - DB_PASSWORD=1234
+  - PGPORT=8080
+
+services:
+  - postgresql
+
 before_script:
-  - psql --command="CREATE USER ${DB_USER};"
-  - psql --command="CREATE DATABASE ${DB_NAME} WITH OWNER = ${DB_USER};"
-  - psql --dbname=$DB_NAME --file=sql/create-tables.sql
-install:
-  - npm install
-cache:
-  directories:
-    - 'node_modules'
+  - psql -c 'create database travis_ci_test;' -U postgres
+
 
