@@ -63,7 +63,7 @@ describe("Quotes", function(){
         
         it ("Should Fetch all the Books", (done)=>{
             chai.request(server)
-                .get("/api/quotes")
+                .get("/api/quotes/")
                 .end((err, result)=>{
                     result.should.have.status(200);
                     //console.log ("Got",result.body.data.length, " docs")
@@ -128,7 +128,7 @@ describe("Quotes", function(){
         
         it("Should confirm delete with number of Docs from DB", (done)=>{
             chai.request(server)
-                .get("/api/quotes")
+                .get("/api/quotes/")
                 .end((err, result)=>{
                     result.should.have.status(200);
                     //result.body.data.length.should.eq(1);

@@ -2,3 +2,6 @@ language: node_js
 node_js:
   - v12.13.1
 
+env:
+  global:
+  - PGPORT=8080
