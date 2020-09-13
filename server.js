@@ -35,3 +35,10 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
+
+
+const server = app.listen(3000, function(){
+  console.log("API en cours d'exécution sur le port 3000");
+}); 
+
+module.exports = server;
