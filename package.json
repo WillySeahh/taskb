@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Node.js Rest Apis with Express, Sequelize & M",
   "main": "server.js",
+  "before-script": {
+    "start": "server.js"
+  },
   "scripts": {
     "start": "node ./bin/www",
     "test": "mocha"
