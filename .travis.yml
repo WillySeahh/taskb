@@ -9,6 +9,6 @@ before_script:
   - travis_wait 30 npm install
   - psql -c 'create database testdb;' -U postgres
   - travis_wait npm install
-  - node build/models/database.js
+  - node app/models/index.js
 script: npm test
 
