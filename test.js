@@ -8,13 +8,13 @@ let should = chai.should();
 
 chai.use(chaiHttp);
 describe("Quotes", function(){
-    
+    this.timeout(3000);
     describe ("DELETE ALL", function(){
         it("should remove all first", (done) =>{
            // console.log ("Deleting all data in db first.")
             chai.request(server)
                 .delete("/api/quotes/")
-               // .send({})
+                .send({})
                 .end((err,res)=>{
                     //console.log (res)
                     // console.log("err",err);
