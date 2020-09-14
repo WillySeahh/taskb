@@ -39,14 +39,9 @@ exports.findAll = (req, res) => {
   var condition = title ? { title: { [Op.iLike]: `%${title}%` } } : null;
 
   Quote.findAll({ where: condition })
-  /*
     .then(data => {
       res.send(data);
     })
-    */
-    .then(        
-      res.send({message: `Fetched all`
-    }))
     .catch(err => {
       res.status(500).send({
         message:

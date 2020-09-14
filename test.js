@@ -65,7 +65,7 @@ describe("Quotes", function(){
         
         it ("Should Fetch all the Books", (done)=>{
             chai.request(server)
-                .get("/api/quotes/")
+                .get("/api/quotes")
                 .end((err, result)=>{
                     result.should.have.status(200);
                     //console.log ("Got",result.body.data.length, " docs")
