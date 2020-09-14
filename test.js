@@ -62,7 +62,7 @@ describe("Quotes", function(){
             done()
         })
         
-        
+        /*
         it ("Should Fetch all the Books", (done)=>{
             chai.request(server)
                 .get("/api/quotes/")
@@ -74,6 +74,7 @@ describe("Quotes", function(){
                     done()
                 })
         })
+        */
         
         it ("Should Fetch Particular Book only", (done)=>{
             chai.request(server)
