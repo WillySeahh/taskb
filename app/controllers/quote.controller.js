@@ -123,7 +123,7 @@ exports.deleteAll = (req, res) => {
   })
   
     .then(nums => {
-      res.send({ message: `${nums} Quote were deleted successfully!` });
+      res.send({ message: ` Quote were deleted successfully!` });
     })
     
    /*
