@@ -10,16 +10,16 @@ chai.use(chaiHttp);
 describe("Quotes", function(){
     
     describe ("DELETE ALL", function(){
-        it("should remove all first", done=>{
-            console.log ("Deleting all data in db first.")
+        it("should remove all first", (done) =>{
+           // console.log ("Deleting all data in db first.")
             chai.request(server)
                 .delete("/api/quotes/")
-                .send({})
+               // .send({})
                 .end((err,res)=>{
                     //console.log (res)
                     // console.log("err",err);
                     res.should.have.status(200);
-                    console.log("Response Body:", res.body);
+                    //console.log("Response Body:", res.body);
                     // console.log (result);
                     done()
                 })
