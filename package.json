@@ -10,6 +10,9 @@
     "start": "node ./bin/www",
     "test": "mocha"
   },
+  "after-script": {
+    "stop": "npm stop"
+  },
   "keywords": [
     "nodejs",
     "express",
