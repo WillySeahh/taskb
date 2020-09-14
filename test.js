@@ -17,11 +17,9 @@ describe("Quotes", function(){
                 .delete("/api/quotes/")
                 .send({})
                 .end((err,result)=>{
-                    //console.log (res)
-                    // console.log("err",err);
+
                     result.should.have.status(200);
-                    //console.log("Response Body:", res.body);
-                    // console.log (result);
+
                     done()
                 })
         })
