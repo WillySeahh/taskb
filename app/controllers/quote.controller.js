@@ -39,15 +39,9 @@ exports.findAll = (req, res) => {
   var condition = title ? { title: { [Op.iLike]: `%${title}%` } } : null;
 
   Quote.findAll({ where: condition })
-  /*
     .then(data => {
       res.send(data);
     })
-    */
-   .then(        
-    res.send({message: "Fetched all"
-  }))
-   .then
     .catch(err => {
       res.status(500).send({
         message:
@@ -127,16 +121,16 @@ exports.deleteAll = (req, res) => {
     where: {},
     truncate: false
   })
-    /*
-    .then(nums => {
-      res.send({ message: "Quote were deleted successfully!" });
-    })
-    */
-   
-   .then(        
-    res.send({message: "Deleted all"
-  }))
   
+    .then(nums => {
+      res.send({ message: `${nums} Quote were deleted successfully!` });
+    })
+    
+   /*
+   .then(        
+    res.send({message: `Deleted all`
+  }))
+  */
     .catch(err => {
       res.status(500).send({
         message:
