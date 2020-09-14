@@ -121,9 +121,14 @@ exports.deleteAll = (req, res) => {
     where: {},
     truncate: false
   })
+  /*
     .then(nums => {
       res.send({ message: `${nums} Quote were deleted successfully!` });
     })
+    */
+   .then(nums => {
+    res.send({ message: `Quote were deleted successfully!` });
+  })
     .catch(err => {
       res.status(500).send({
         message:
