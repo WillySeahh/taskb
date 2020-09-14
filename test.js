@@ -8,6 +8,7 @@ let should = chai.should();
 
 chai.use(chaiHttp);
 describe("Quotes", function(){
+    /*
     describe ("DELETE ALL", function(){
         it("should remove all first", done=>{
             console.log ("Deleting all data in db first.")
@@ -25,6 +26,7 @@ describe("Quotes", function(){
         })
 
     })
+    */
     
     
     describe ("CRUD OPERATIONS", function(){
