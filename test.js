@@ -8,7 +8,7 @@ let should = chai.should();
 
 chai.use(chaiHttp);
 describe("Quotes", function(){
-    /*
+    
     describe ("DELETE ALL", function(){
         it("should remove all first", done=>{
             console.log ("Deleting all data in db first.")
@@ -26,7 +26,7 @@ describe("Quotes", function(){
         })
 
     })
-    */
+    
     
     
     describe ("CRUD OPERATIONS", function(){
@@ -65,7 +65,7 @@ describe("Quotes", function(){
         
         it ("Should Fetch all the Books", (done)=>{
             chai.request(server)
-                .get("/api/quotes")
+                .get("/api/quotes/")
                 .end((err, result)=>{
                     result.should.have.status(200);
                     //console.log ("Got",result.body.data.length, " docs")
