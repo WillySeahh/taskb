@@ -2,15 +2,22 @@ language: node_js
 node_js:
   - v12.13.1
 
-
 env:
   global:
-  - PGPORT=8080
-
-addons:
-    postgresql: '9.6'
-
+    - PGPORT=5433
+    - DB_NAME=testdb
+    - DB_USER=postgres
+    - DB_PASSWORD=1234
+directories:
+- node_modules
+services:
+  - postgresql
 before_script:
-- cp config/database.yml.travis config/database.yml
+  - npm install
+  - psql -c 'create database your_database_name;' -U postgres
+script:
+- npm run test
+notifications:
+  email: false
 
 
