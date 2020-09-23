@@ -3,12 +3,21 @@ let chai = require("chai");
 let chaiHttp = require("chai-http");
 let server=require("./server");
 let should = chai.should();
+const app = require('./server');
 
 
 
 chai.use(chaiHttp);
 describe("Quotes", function(){
 
+    
+    before((done) => {
+        app.on('serverStarted', () => {
+
+            done();
+        });
+    }); 
+        
     
     describe ("DELETE ALL", function(){
         it("should remove all first", (done) =>{
