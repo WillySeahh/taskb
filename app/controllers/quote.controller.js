@@ -7,7 +7,7 @@ exports.create = (req, res) => {
   // Validate request
   if (!req.body.title) {
     res.status(400).send({
-      message: "Content can not be empty!"
+      message: "Title can not be empty!"
     });
     return;
   }
@@ -75,7 +75,8 @@ exports.update = (req, res) => {
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Quote was updated successfully."
+          message: "Quote was updated successfully.",
+          status: "success",
         });
       } else {
         res.send({
