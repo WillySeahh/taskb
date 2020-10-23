@@ -80,7 +80,7 @@ exports.update = (req, res) => {
         });
       } else {
         res.send({
-          message: `Cannot update Quote with id=${id}. Maybe Tutorial was not found or req.body is empty!`
+          message: `Cannot update Quote with id=${id}. Maybe quote was not found or req.body is empty!`
         });
       }
     })

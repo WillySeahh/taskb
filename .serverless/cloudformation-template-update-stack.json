@@ -160,7 +160,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/task-b-cs3219/dev/1602849016758-2020-10-16T11:50:16.758Z/task-b-cs3219.zip"
+          "S3Key": "serverless/task-b-cs3219/dev/1603415508839-2020-10-23T01:11:48.839Z/task-b-cs3219.zip"
         },
         "FunctionName": "task-b-cs3219-dev-app",
         "Handler": "./server.handler",
@@ -197,14 +197,14 @@
         "AppLogGroup"
       ]
     },
-    "AppLambdaVersionFQN3sChFlWykBwoM30zysazzjHCwLgQgLuwbYHKZ0": {
+    "AppLambdaVersionq2QpV9LEE1TWto7K1vRrSErHkXBYF0rdkeHYa3WSbG4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppLambdaFunction"
         },
-        "CodeSha256": "pohog2nLgRT+GsLMZznRP4aYgBZxDzL66p4apaeZ+vw="
+        "CodeSha256": "UMV4JWUdobKN99KI/mSP4r3YyKIbiMAc2huZCh90WL8="
       }
     },
     "ApiGatewayRestApi": {
@@ -323,7 +323,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1602848975635": {
+    "ApiGatewayDeployment1603415475643": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -383,7 +383,7 @@
     "AppLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppLambdaVersionFQN3sChFlWykBwoM30zysazzjHCwLgQgLuwbYHKZ0"
+        "Ref": "AppLambdaVersionq2QpV9LEE1TWto7K1vRrSErHkXBYF0rdkeHYa3WSbG4"
       }
     },
     "ServiceEndpoint": {
