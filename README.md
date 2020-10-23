@@ -1,6 +1,8 @@
-CS3219 OTOT Task B
+# CS3219 OTOT Task B
 
-Task B1
+[![Build Status](https://github.com/WillySeahh/taskb.svg?branch=master)](https://github.com/WillySeahh/taskb)
+
+### Task B1
 
 Implement a simple Javascript backend and REST API to GET, POST, PUT and DELETE. This repository contains a API that allows for create, retrieve, update and delete of quotes. The application uses Node.js and PostgreSQL(with pgAdmin). It will be testing through Postman.
 
@@ -15,28 +17,28 @@ Setup and Run for Task B1 and B2
 
 
 
-Local Testing using Postman:
+Local Testing using Postman:  
 (Please refer to my submitted doc for a clearer view and I have included photos so that it will be easy
 for users to follow)
 
-1. Get all quotes
-Enter localhost:3000/api/quotes -> Select GET -> Click Send
+1. Get all quotes  
+
+Enter localhost:3000/api/quotes -> Select GET -> Click Send  
 
 You should get the list of all quotes. If the database is empty, it will return an empty array.
 
-. 
 
+2. Create a new quote  
 
-2. Create a new quote 
-Enter localhost:3000/api/quotes -> Select Body Tab -> Select raw -> Select Json -> Fill in the “title”, “author”, “description” -> Select Post -> Click Send
+Enter localhost:3000/api/quotes -> Select Body Tab -> Select raw -> Select Json -> Fill in the “title”, “author”, “description” -> Select Post -> Click Send  
 
 You should get the detail of the new quote. 
 
+3. Get a specific quote  
 
-3. Get a specific quote
-Enter -> localhost:3000/api/quotes/{id} -> Replace {id} with the id of the quote -> Select Get -> Click send 
+Enter -> localhost:3000/api/quotes/{id} -> Replace {id} with the id of the quote -> Select Get -> Click send   
  
-You should get the detail of this specific quote.
+You should get the detail of this specific quote.  
 If quote doesn’t exist, it will return a message saying quote with id do not exist.
  
 
