@@ -67,7 +67,7 @@ You should get the message of total number of quotes was deleted successfully.
 **For deployed endpoint testing refer to B3 below. B3 is where I’ve done by deploying.**
 
 
-# Task B2  
+### Task B2  
 Write simple test cases for API and use a CI tool (Travis CI) to automate testing.
 
 The test cases are created by Mocha and Chai.  
@@ -90,12 +90,12 @@ Run test through Travis CI
 
 
 
-# Task B3  
+### Task B3  
 Use CD tool for automated deployment to a serverless service.
 
 This task using AWS Lambda as serverless service and Travis CI for automatic deployment.
 
-# Postman Testing with serverless service (Continued from B1 where they said “successful deployed endpoints”)  
+### Postman Testing with serverless service (Continued from B1 where they said “successful deployed endpoints”)  
 
 **Please refer to my submitted doc for a clearer view and I have included photos so that it will be easy
 for users to follow**  
@@ -113,7 +113,7 @@ You are required to use https://kv2wuhd9ll.execute-api.ap-southeast-1.amazonaws.
  
 
 
-# Setup Travis with AWS Credentials for CD
+### Setup Travis with AWS Credentials for CD
 
 Whenever I push my code to github, travis will automatically run tests and then afterwards deploy my code. 
 1. Ensure the code is pushed to Guthub
