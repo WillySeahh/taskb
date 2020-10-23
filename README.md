@@ -95,7 +95,7 @@ Use CD tool for automated deployment to a serverless service.
 
 This task using AWS Lambda as serverless service and Travis CI for automatic deployment.
 
-### Postman Testing with serverless service (Continued from B1 where they said “successful deployed endpoints”)  
+** Postman Testing with serverless service (Continued from B1 where they said “successful deployed endpoints”) **  
 
 **Please refer to my submitted doc for a clearer view and I have included photos so that it will be easy
 for users to follow**  
