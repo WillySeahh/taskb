@@ -64,7 +64,7 @@ Enter -> localhost:3000/api/quotes -> Select Delete -> Click Send
 You should get the message of total number of quotes was deleted successfully.
 
 
-**For deployed endpoint testing refer to B3 below. B3 is where I’ve done by deploying.**
+**For deployed endpoint testing refer to B3 below. B3 is where I’ve done by deploying as such the deployed testing is done there.**
 
 
 ### Task B2  
