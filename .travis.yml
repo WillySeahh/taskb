@@ -13,6 +13,6 @@ before_script:
 script: 
   - npm test
   - npm install -g serverless
-  - npm run deploy
+  - npm deploy
 
 
