@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha --exit"
+    "test": "mocha --exit",
+    "deploy": "serverless deploy"
   },
   "after-script": {
     "stop": "npm stop"
@@ -21,7 +22,7 @@
     "api",
     "postgresql"
   ],
-  "author": "bezkoder",
+  "author": "Willy Seah",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
