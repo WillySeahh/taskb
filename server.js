@@ -2,14 +2,19 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const {sequelize} = require("./app/models");
+const serverless = require('serverless-http');
 
 const app = express();
 
+/*
 var corsOptions = {
   origin: "http://localhost:8081"
 };
 
 app.use(cors(corsOptions));
+*/
+
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
@@ -26,7 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome CS3219" });
 });
 const PORT = 3000;
 
@@ -39,11 +44,10 @@ app.listen(PORT, () => {
   app.emit('serverStarted');
 });
 */
+require('./app/routes/quote.routes')(app);
 sequelize.sync().then(() => {
   app.listen(PORT, () => {
-      require('./app/routes/quote.routes')(app);
       console.log(`App listening on port ${PORT}`);
-
       app.emit('serverStarted');
   });
 });
@@ -57,3 +61,4 @@ const server = app.listen(3000, function(){
 
 
 module.exports = app;
+module.exports.handler = serverless(app);

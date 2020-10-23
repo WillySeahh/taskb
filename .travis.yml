@@ -10,6 +10,9 @@ before_script:
   - psql -c 'create database testdb;' -U postgres
   - travis_wait npm install
   - node app/models/index.js
-script: npm test
+script: 
+  - npm test
+  - npm install -g serverless
+  -npm run deploy
 
 
