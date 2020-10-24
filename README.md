@@ -1,5 +1,6 @@
 # CS3219 OTOT Task B
 
+* Please visit the .pdf I have submitted in LUMINUS for clearer instructions and images * 
 
 ### Task B1
 
