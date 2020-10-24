@@ -117,13 +117,13 @@ You are required to use https://kv2wuhd9ll.execute-api.ap-southeast-1.amazonaws.
 Whenever I push my code to github, travis will automatically run tests and then afterwards deploy my code. 
 1. Ensure the code is pushed to Guthub
 2. Go to Travis CI
-3. Select taskb tab and clicj on more options and choose settings.
-4. Under Environment variable enter AWS ACCESS KEY AND SECRET KEY. Which will be stated in the pdf
+3. Select taskb tab and click on more options and choose settings.
+4. Under Environment variable enter AWS ACCESS KEY AND SECRET KEY; stated in the pdf
  
 
-### Sample of Quote
+### Sample of Quote for you to copy paste and test
 Post: http://localhost:3000/api/quotes
-Make sure change data to JSON format
+Make sure to select Body tab, select raw and change data to JSON format
 { 
     "title": "online friday test",
     "author": "online friday test", 
