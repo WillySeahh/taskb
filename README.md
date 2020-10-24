@@ -1,10 +1,8 @@
 # CS3219 OTOT Task B
 
-* Please visit the .pdf I have submitted in LUMINUS for clearer instructions and images * 
+### Please visit the .pdf I have submitted in LUMINUS for clearer instructions and images 
 
 ### Task B1
-
-Implement a simple Javascript backend and REST API to GET, POST, PUT and DELETE. This repository contains a API that allows for create, retrieve, update and delete of quotes. The application uses Node.js and PostgreSQL(with pgAdmin). It will be testing through Postman.
 
 Setup and Run for Task B1 and B2
 1. You are required to download and install Node.js, PostgreSQL (with pgAdmin) and Postman.
@@ -14,7 +12,6 @@ Setup and Run for Task B1 and B2
 5. Run pgAdmin applicaton to start the database and create a new Database name task-b in pgAdmin.
 6. Run node server.js to start the application.
 7. Afterwards, we can start accessing the API through the Postman.
-
 
 
 Local Testing using Postman:  
@@ -96,10 +93,11 @@ Use CD tool for automated deployment to a serverless service.
 
 This task using AWS Lambda as serverless service and Travis CI for automatic deployment.
 
-** Postman Testing with serverless service (Continued from B1 where they said “successful deployed endpoints”) **  
+**Postman Testing with serverless service (Continued from B1 where they said “successful deployed endpoints”)**    
 
 **Please refer to my submitted doc for a clearer view and I have included photos so that it will be easy
-for users to follow**  
+for users to follow** 
+
 
 This section will show how to use Postman to test the APIs from deployment using Lambda.
 
